@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MDObject.h"
+#import "MDChild.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,57 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+   // NSArray* array = [[NSArray alloc] initWithObjects:@"String 1",@"String 2", @"String 3", nil];
+   // NSArray* array = [NSArray arrayWithObjects:@"String 1",@"String 2", @"String 3", nil];
+   //NSArray* array = @[@"String 1",@"String 2", @"String 3"];
+    
+    /*
+    for (int i = 0;  i < [array count]; i++) {
+        NSLog(@"%@", [array objectAtIndex: i]);
+        NSLog(@"i = %d", i);
+    }
+    
+    for (int i = [array count] - 1;  i >= 0; i--) {
+        NSLog(@"%@", [array objectAtIndex: i]);
+        NSLog(@"i = %d", i);
+    }
+    */
+    
+    /*
+    for (NSString* string in array) {
+        NSLog(@"%@", string);
+        NSLog(@"index = %d", [array indexOfObject: string]);
+    }
+    */
+    
+    MDObject* obj1 = [[MDObject alloc] init];
+    MDObject* obj2 = [[MDObject alloc] init];
+    MDChild* obj3 = [[MDChild alloc] init];
+    
+    obj1.name = @"Object 1";
+    obj2.name = @"Object 2";
+    obj3.name = @"Object 3";
+    
+    obj3.lastName = @"Last Name";
+    
+    NSArray* array =  [NSArray arrayWithObjects:obj1, obj2, obj3, nil];
+    
+    for (MDObject* obj in array) {
+       NSLog(@"name = %@", obj.name);
+        [obj action];
+        
+        if ([obj isKindOfClass:[MDChild class]]) {
+            
+            MDChild* child = (MDChild*) obj;
+            
+            NSLog(@"Last name = %@", child.lastName );
+        }
+        
+    }
+    
     return YES;
+    
 }
 
 

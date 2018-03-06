@@ -13,6 +13,8 @@
 		24A4715E204F041D00CA2173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A4715D204F041D00CA2173 /* Assets.xcassets */; };
 		24A47161204F041D00CA2173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A4715F204F041D00CA2173 /* LaunchScreen.storyboard */; };
 		24A47164204F041D00CA2173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A47163204F041D00CA2173 /* main.m */; };
+		24A4716C204F100E00CA2173 /* MDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A4716B204F100E00CA2173 /* MDObject.m */; };
+		24A4716F204F156400CA2173 /* MDChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A4716E204F156400CA2173 /* MDChild.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		24A47160204F041D00CA2173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24A47162204F041D00CA2173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24A47163204F041D00CA2173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24A4716A204F100E00CA2173 /* MDObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDObject.h; sourceTree = "<group>"; };
+		24A4716B204F100E00CA2173 /* MDObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDObject.m; sourceTree = "<group>"; };
+		24A4716D204F156400CA2173 /* MDChild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDChild.h; sourceTree = "<group>"; };
+		24A4716E204F156400CA2173 /* MDChild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDChild.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 		24A47153204F041D00CA2173 /* ArraysTest */ = {
 			isa = PBXGroup;
 			children = (
+				24A4716A204F100E00CA2173 /* MDObject.h */,
+				24A4716B204F100E00CA2173 /* MDObject.m */,
+				24A4716D204F156400CA2173 /* MDChild.h */,
+				24A4716E204F156400CA2173 /* MDChild.m */,
 				24A47154204F041D00CA2173 /* AppDelegate.h */,
 				24A47155204F041D00CA2173 /* AppDelegate.m */,
 				24A47157204F041D00CA2173 /* ViewController.h */,
@@ -142,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A4716F204F156400CA2173 /* MDChild.m in Sources */,
 				24A47159204F041D00CA2173 /* ViewController.m in Sources */,
+				24A4716C204F100E00CA2173 /* MDObject.m in Sources */,
 				24A47164204F041D00CA2173 /* main.m in Sources */,
 				24A47156204F041D00CA2173 /* AppDelegate.m in Sources */,
 			);
