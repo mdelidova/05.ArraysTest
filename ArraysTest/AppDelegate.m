@@ -68,6 +68,18 @@
         
     }
     
+    NSInteger heightStudent = 165;
+    CGFloat weightStudent = 53.7f;
+    
+    NSNumber* height = [NSNumber numberWithInt: heightStudent];
+    NSNumber* weight = [NSNumber numberWithFloat: weightStudent];
+    
+    NSArray* array1 = [NSArray arrayWithObjects: height, weight, nil];
+    
+    NSLog(@"heightStudent = %d, weightStudent = %f",
+          [[array1 objectAtIndex:0] intValue],
+          [[array1 objectAtIndex:1] floatValue]);
+    
     return YES;
     
 }
